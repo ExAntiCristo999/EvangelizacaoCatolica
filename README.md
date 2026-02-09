@@ -10,3 +10,6 @@ Para quem usa o Microsoft Windows recomendo a instalação do seguinte programa:
 https://www.7-zip.org/
 
 Para quem usa o Linux, recomendo a instalação do busybox.
+
+
+Para quem usa o aplicativo Termux no Android, recomendo a instalação do busybox.
