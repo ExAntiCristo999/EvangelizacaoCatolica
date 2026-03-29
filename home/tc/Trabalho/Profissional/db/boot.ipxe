@@ -1,0 +1,17 @@
+#!ipxe
+
+menu Network Boot
+item microcore MicroCore Linux
+item memtest  Memtest86+
+choose target
+
+goto ${target}
+
+:microcore
+kernel http://192.168.0.1/vmlinuz64
+initrd http://192.168.0.1/corepure64.gz
+boot
+
+:memtest
+kernel http://192.168.0.1/mt86plus
+boot

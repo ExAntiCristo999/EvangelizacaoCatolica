@@ -1,0 +1,1 @@
+Start-Process -FilePath "\\instaladores\Instaladores\Anti Virus\ElementsAgentInstaller[6KJ9-LLQE-43TF-HLC9-BUDY].exe" -ArgumentList "/S /L=pt-BR" -Wait

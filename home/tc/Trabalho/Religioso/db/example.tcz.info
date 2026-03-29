@@ -1,0 +1,12 @@
+Title:          Package's name.
+Description:    Package's description.
+Version:        Package's version.
+Author:         Package's author.
+Original-site:  Packege's original site.
+Copying-policy: Package's copying policy.
+Size: 		Package's size.
+Extension_by:   Package's tcz author.
+Tags:	        Package's tags.
+Comments:       Package's comments.
+Change-log:     History containing: date and transition from one package version to another.
+Current:        Date and transition from one package version to another.

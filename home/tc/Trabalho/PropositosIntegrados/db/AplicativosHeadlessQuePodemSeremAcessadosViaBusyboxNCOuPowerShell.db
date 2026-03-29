@@ -1,0 +1,41 @@
+**1. CAD (Desenho Assistido por Computador):**
+
+*   **Exemplos GPL:**
+    *   **FreeCAD:** Possui um poderoso *console Python* que permite scripting e automação de tarefas complexas. Você pode criar scripts para gerar modelos 3D, realizar análises, exportar para diversos formatos, etc. Ele também possui
+APIs para acesso programático.
+    *   **LibreCAD:** Embora mais focado em 2D, também pode ser automatizado através de seus arquivos de script ou interfaces de linha de comando.
+*   **Motor de Renderização:** O FreeCAD, por exemplo, utiliza motores de renderização internos e bibliotecas de terceiros para gerar imagens e visualizações. Um cliente CLI poderia instruir o FreeCAD a renderizar uma vista específic
+a de um modelo em um determinado formato de imagem.
+
+**2. GIS (Sistema de Informação Geográfica):**
+
+*   **Exemplos GPL:**
+    *   **QGIS:** Possui uma API Python robusta (PyQGIS) que permite automatizar praticamente todas as funcionalidades. Você pode processar dados geoespaciais, criar mapas, realizar análises espaciais, exportar resultados, etc.
+    *   **GRASS GIS:** Um sistema GIS de linha de comando poderoso e extensível, com uma vasta gama de módulos para processamento e análise geoespacial.
+*   **Motor de Renderização:** O QGIS pode exportar mapas renderizados para vários formatos (PNG, SVG, PDF) através de sua API.
+
+**3. Planilha:**
+
+*   **Exemplos GPL:**
+    *   **LibreOffice Calc:** Pode ser controlado via linha de comando para abrir, modificar, salvar e exportar planilhas. A automação com linguagens como Python (usando bibliotecas como `uno` ou `libreoffice-python`) é muito poderosa.
+    *   **Gnumeric:** Uma planilha leve e com bom suporte a importação/exportação de formatos, que também pode ser automatizada.
+*   **Motor de Renderização:** A "renderização" de uma planilha seria a geração de sua representação em formatos como CSV, ODS, PDF, ou até mesmo imagens para visualização.
+
+**4. Editor de Texto Estilo Word:**
+
+*   **Exemplos GPL:**
+    *   **LibreOffice Writer:** Assim como o Calc, pode ser automatizado via linha de comando e API Python (`uno`). Isso permite criar documentos, formatar texto, inserir tabelas, imagens e exportar para diversos formatos (DOCX, ODT, PDF).
+    *   **AbiWord:** Um editor de texto mais leve que também pode ser scriptado.
+*   **Motor de Renderização:** A geração de um documento finalizado, seja em PDF, DOCX ou outro formato, é a "renderização" aqui.
+
+**5. Editor de Vídeo:**
+
+*   **Exemplos GPL:**
+    *   **Kdenlive:** Possui um sistema de linhas de comando que permite renderizar projetos de vídeo. É possível criar um projeto em Kdenlive (ou definir as sequências de edição via metadados) e instruir o programa a renderizar o ví
+deo final em um determinado formato e resolução.
+    *   **OpenShot:** Similar ao Kdenlive, com funcionalidades de linha de comando para renderização.
+    *   **FFmpeg:** Embora não seja um editor de vídeo com GUI tradicional, o FFmpeg é a ferramenta *fundamental* para a manipulação e renderização de áudio e vídeo em linha de comando. Muitas GUIs de editores de vídeo utilizam FF
+mpeg por baixo dos panos. Com FFmpeg, você pode fazer *tudo* relacionado à conversão, transcodificação, e composição de mídia.
+*   **Motor de Renderização:** O motor de renderização aqui é o processo complexo de codificação de vídeo e áudio, aplicação de efeitos, transições, etc., que o software executa para gerar o arquivo de vídeo final.
+
+
