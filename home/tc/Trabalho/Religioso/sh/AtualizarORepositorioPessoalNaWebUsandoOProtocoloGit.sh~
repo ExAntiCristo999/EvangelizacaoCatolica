@@ -24,9 +24,9 @@ fi
 if [ "$USER" = "tc" ]; then
 	filetool.sh -b
 elif [ -n "$TERMUX_VERSION" ]; then
-	busybox tar -C $HOME -T $HOME/opt/.filetool.lst -X $HOME/opt/.xfiletool.lst -czf ~/mydata.tgz home opt RodarEsteProgramaPelaPrimeiraVezNoTermux.sh .gitignore
+	busybox tar -C $HOME -T $HOME/opt/.filetool.lst -X $HOME/opt/.xfiletool.lst -czf ~/mydata.tgz home opt RodarEsteProgramaPelaPrimeiraVezNoTermux.sh .gitignore .git/
 fi
-git add .
+( echo "$4" | echo "$Token" ) | git add .
 ( echo "$4" | echo "$Token" ) | git branch -M main
 ( echo "$4" | echo "$Token" ) | git push -u origin main
 ( echo "$4" | echo "$Token" ) | git commit -m "$2"
