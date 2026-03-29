@@ -32,7 +32,7 @@ git remote remove origin
 git remote add origin "$3"
 #( echo "$4" | echo "$Token" ) | git push
 #if [ ! -d "$1/.git" ]; then
-	git pull origin main --rebase
+	#git pull origin main --rebase
 	(echo "$4" | echo "$Token" ) | git push -f -u origin main
 #fi
 #if [ -d "$1/.git" ]; then
