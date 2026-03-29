@@ -27,17 +27,12 @@ elif [ -n "$TERMUX_VERSION" ]; then
 	busybox tar -C $HOME -T $HOME/opt/.filetool.lst -X $HOME/opt/.xfiletool.lst -czf ~/mydata.tgz home opt RodarEsteProgramaPelaPrimeiraVezNoTermux.sh .gitignore .git/
 fi
 git add .
-echo 1
+git config --global credential.helper store
 git branch -M main
-echo 2
-git push -u origin main
-echo 3
+git push -u origin main 
 git commit -m "$2"
-echo 4
 git remote remove origin
-echo 5
 git remote add origin "$3"
-echo 6
 #( echo "$4" | echo "$Token" ) | git push
 #if [ ! -d "$1/.git" ]; then
 	#git pull origin main --rebase

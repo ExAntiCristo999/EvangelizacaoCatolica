@@ -26,12 +26,18 @@ if [ "$USER" = "tc" ]; then
 elif [ -n "$TERMUX_VERSION" ]; then
 	busybox tar -C $HOME -T $HOME/opt/.filetool.lst -X $HOME/opt/.xfiletool.lst -czf ~/mydata.tgz home opt RodarEsteProgramaPelaPrimeiraVezNoTermux.sh .gitignore .git/
 fi
-( echo "$4" | echo "$Token" ) | git add .
-( echo "$4" | echo "$Token" ) | git branch -M main
-( echo "$4" | echo "$Token" ) | git push -u origin main
-( echo "$4" | echo "$Token" ) | git commit -m "$2"
-( echo "$4" | echo "$Token" ) | git remote remove origin
-( echo "$4" | echo "$Token" ) | git remote add origin "$3"
+git add .
+echo 1
+git branch -M main
+echo 2
+( echo "$4" ; echo "$Token" ) | git push -u origin main 
+echo 3
+git commit -m "$2"
+echo 4
+git remote remove origin
+echo 5
+git remote add origin "$3"
+echo 6
 #( echo "$4" | echo "$Token" ) | git push
 #if [ ! -d "$1/.git" ]; then
 	#git pull origin main --rebase
