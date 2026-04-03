@@ -1,0 +1,2 @@
+#!/bin/sh
+exec aterm +tr +sb -T "Vim" -e vim 

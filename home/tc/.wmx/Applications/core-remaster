@@ -1,0 +1,2 @@
+#!/bin/sh
+exec cliorx /usr/local/bin/core-remaster
