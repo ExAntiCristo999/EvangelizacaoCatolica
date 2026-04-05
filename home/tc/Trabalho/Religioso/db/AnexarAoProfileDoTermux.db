@@ -1,0 +1,22 @@
+# Credenciais Google Cloud
+export YT_CLIENT_ID="SEU_ID_AQUI"
+export YT_CLIENT_SECRET="SEU_SECRET_AQUI"
+export YT_REFRESH_TOKEN="SEU_REFRESH_TOKEN_AQUI"
+
+# Função de Intervenção Manual
+enviar_luz() {
+    local PARENT_ID=$1
+    if [ -z "$PARENT_ID" ]; then echo "Erro: ID ausente"; return; fi
+
+    local ACCESS_TOKEN=$(curl -s -X POST https://oauth2.googleapis.com/token \
+        -d client_id=$YT_CLIENT_ID -d client_secret=$YT_CLIENT_SECRET \
+        -d refresh_token=$YT_REFRESH_TOKEN -d grant_type=refresh_token | jq -r .access_token)
+
+    echo "--- Modo Intervenção Compassiva ---"
+    read -p "Sua Mensagem: " MENSAGEM
+
+    curl -s -X POST "https://www.googleapis.com/youtube/v3/comments?part=snippet" \
+        -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" \
+        -d "{\"snippet\": {\"parentId\": \"$PARENT_ID\", \"textOriginal\": \"$MENSAGEM\"}}"
+    echo -e "\n✅ Mensagem enviada."
+}

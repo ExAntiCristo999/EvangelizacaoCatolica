@@ -1,0 +1,5 @@
+echo "Se apenas um usuário usar o computador, solicite ao usuário logar no computador para que seja possível devolver seus arquivos exatamente às mesmas pastas onde eram salvos."
+echo "Além disso, certifique-se de incluir na área de trabalho os ícones de:"
+echo "- Este Computador"
+echo "- Pasta padrão de arquivos do usuário (Documentos, Imagens, etc.)"
+echo "Isso ajudará a restaurar o ambiente de trabalho do usuário e garantir que os arquivos sejam devolvidos corretamente."

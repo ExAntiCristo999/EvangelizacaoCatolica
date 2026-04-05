@@ -1,0 +1,3 @@
+echo "Após concluir o Rescuezilla e desligar o computador, retire o HD externo, e plugue o pendrive de instalação do Windows 10 ou do Windows 11."
+echo "Nas últimas etapas do windows, desative todas as opçõpes do Cortana, anúncios, localização do dispositivo, envio de dados de diagnóstico, e todas as outras oferecidas antes da Área de Trabalho. Quando for sugerido o uso de uma conta Microsoft, optar por uma conta 'offline', escolhendo a opção 'Eu não tenho internet', não conectando o computador às redes sem fio, e em seguida escolhendo a opção 'Continuar com a configuração limitada', mantendo o computador conectado apenas à rede cabeada; definir o nome do usuário como 'PMT' com a senha em branco."
+C:\Windows\System32\oobe\bypassnro.cmd
